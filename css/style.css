@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset */
+
+/* Assets */
+.btn {
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 1em;
+    background-color: rgb(255, 174, 0);
+
+
+    transition: transform .1s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(.99);
+}
+
+
+/* /Assets */
+
+body {
+    background-color: #212121;
+    color: white;
+
+    font-family: sans-serif;
+}
+
+#app{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2em;
+
+    padding-top: 5em;
+}
+
+#app ul li {
+    padding: .3em 0;
+}
+

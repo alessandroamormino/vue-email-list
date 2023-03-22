@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue - Email List</title>
-
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
-    
 </head>
 <body>
 
     <div id="app">
+        <h1>Generate 10 emails</h1>
         <ul>
             <li v-for="email in emailList">{{email}}</li>
         </ul>
-        <button @click="getTenRandomEmail()">Generate Email</button>
+        <button @click="getTenRandomEmail()" class="btn">Generate Email</button>
     </div>
 
     
